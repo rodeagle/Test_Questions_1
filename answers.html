@@ -23,25 +23,27 @@
                     </code>
                 </pre>
             <br>
-            <strong>RED</strong>
+            <strong class="red">RES: On criteria, check how he implements its and uses less jquery and uses some css </strong>
         </p>  
         <hr>
         <p>
             <strong>2) Sort the following array and show it by descending order without using reverse()</strong>
-    
+
             <pre>
-                <code>
+            <code>
                     var array = [3,4,6,1,0,23]
                 </code>
             </pre>
+
+            <strong class="red">array.sort(function(x){return b-a;}); </strong>
         </p> 
 
         <hr>
         <p>
             <strong>3) On an Ajax post how would you represent the json data so that it automatically binds with the following class</strong>
-    
+
             <pre>
-                <code>
+            <code>
                 web ajax post -> { property }
 
                 ControllerMethod (ClassA property)
@@ -60,13 +62,28 @@
                 </code>
             </pre>
             <strong>define property:</strong>
+
+            <strong class="red">array.sort(function(x){return b-a;}); 
+            <pre>
+                <code>
+            Res : var property = {
+                Property1 : '1',
+                Property2 : '2',
+                Property3 : '3',
+                Property4 : {
+                Property1 : '1.1',
+                Property2 : '2.2'
+            };
+                </code>
+            </pre>
+            </strong>
         </p> 
         <hr>
         <p>
             <strong>4) We got a json of students render a array of only student full names</strong>
-    
+
             <pre>
-    <code>
+            <code>
     var students = [
         { FirstName : 'Juan', LastName : 'Perez', Score : '100'},
         { FirstName : 'Pedrito', LastName : 'Caiman', Score : '75'},
@@ -74,13 +91,15 @@
     ];
     </code>
             </pre>
+
+            <strong class="red">Res : map(function(x){return `${x.FirstName} ${x.LastName}`})</strong>
         </p> 
 
         <p>
             <strong>5) On the following object</strong>
-    
+
             <pre>
-    <code>
+            <code>
         var property = {
             Property1 : '1',
             Property2 : '2',
@@ -95,15 +114,17 @@
             </pre>
             <strong>
                 Replace the Property2 of Property4 with the value of 'CHANGED' and render the property on the console
-            </strong> 
+            </strong>
+            <br />
+            <strong class="red">Res : property.Property4.Property2 = "CHANGED"</strong>
         </p>
         <!-- question 7 -->
         <hr>
         <p>
             <strong>7) On the following object</strong>
-    
+
             <pre>
-    <code>
+            <code>
         var property = {
             Property1 : '1',
             Property2 : '2',
@@ -118,15 +139,17 @@
             </pre>
             <strong>
                 Delete the Property2 of Property4 render the property on the console
-            </strong> 
+            </strong>
+            <br />
+            <strong class="red">Res : delete property.Property4.Property2;</strong>
         </p>
         <!-- question 8 -->
         <hr>
         <p>
             <strong>8) I have this class</strong>
-    
+
             <pre>
-    <code>
+            <code>
         public class ClassA {
             public string Property1 {get; set;}
             public string Property2 {get; set;}
@@ -135,23 +158,27 @@
     </code>
             </pre>
             <strong>
-                Add a Property that in a string shows all for elements seperated by a comma 
-            </strong> 
+                Add a Property that in a string shows all for elements seperated by a comma
+            </strong>
+            <br />
+            <strong class="red">Res : public string CustomProperty => String.Join(", ", new string [] {Property1, Property2, Property3 })</strong>
         </p>
         <!-- question 9 -->
         <hr>
         <p>
             <strong>9) Explain the AMD and the benefits as you understand it</strong>
             <br>
+            <strong class="red">Res : On criteria, explains what it is, benefits like async load, faster loading time, etc</strong>
         </p>
         <!-- question 10 -->
         <hr>
         <p>
             <strong>
-                10) was does res value store and why do it this way? </strong>
-    
+                10) was does res value store and why do it this way?
+            </strong>
+
             <pre>
-                <code>
+            <code>
                     function foo(){
                         return false;
                     }
@@ -162,7 +189,14 @@
             </pre>
             <strong>
                 what happens to the following code
-            </strong> 
+            </strong>
+            <strong class="red">explain why it returns false </strong>
         </p>
     </body> 
 </html>
+
+<style>
+    .red {
+        color:red;
+    }
+</style>
